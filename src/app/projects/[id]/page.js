@@ -44,7 +44,7 @@ const projects = [
 ]
 
 export default function ProjectDetailPage({ params }) {
-  // const router = useRouter()
+  const router = useRouter()
   // const { id } = params
 
   const unwrappedParams = React.use(params)
@@ -57,7 +57,7 @@ export default function ProjectDetailPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8">
       <div className="max-w-9xl mx-auto">
         <h1 className="text-4xl text-black font-bold mb-6">{project.title}</h1>
         <p className="text-lg text-gray-700 mb-12">{project.description}</p>
@@ -84,6 +84,9 @@ export default function ProjectDetailPage({ params }) {
           {/* <FontAwesomeIcon icon={faArrowLeft} className="mr-2" /> */}
           Back to Projects
         </button>
+      </div>
+      <div className="bg-gray-50 text-center p-4 text-black text-sm">
+        All Photos &copy; Ritika {new Date().getFullYear()}
       </div>
     </div>
   )
