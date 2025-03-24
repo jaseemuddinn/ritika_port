@@ -1,8 +1,5 @@
 * {
-    /* padding: 0;
-    margin: 0; */
-    box-sizing: border-box; 
-    /* cursor: none; */
+    box-sizing: border-box;
   }
   
   ::selection {
@@ -34,11 +31,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  /* .signature {
-    width: 200px;
-    grid-column-start: 2;
-  } */
   
   nav {
     display: grid;
@@ -81,6 +73,7 @@
     width: 15%;
     min-width: 700px;
     height: 0;
+    min-height: 300px;
     bottom: 40%;
     left: 50%;
     transform: translate(-50%, 80%);
@@ -97,10 +90,9 @@
     color: #ff5900;
     font-size: 7.5rem;
     font-weight: 500;
-    /* text-align: center; */
     left: 25%;
     line-height: 1;
-    top: 40%;
+    top: 50%;
     width: fit-content;
     pointer-events: none;
   }
@@ -119,6 +111,7 @@
   .bottom-section p {
     color: #ff5900;
     font-weight: 300;
+    font-size: 1rem;
     display: flex;
     align-items: center;
   }
@@ -151,6 +144,7 @@
     color: #ff5900;
     font-weight: 400;
     left: 50%;
+    font-size: 1.5rem;
     transform: translateX(-50%);
     bottom: 100px;
     height: 50px;
@@ -206,14 +200,6 @@
     border-color: transparent;
   }
   
-  /* For devices that support hover */
-  /* @media (hover: hover) {
-    * {
-      cursor: none;
-    }
-  } */
-  
-  /* For devices that don't support hover (touchscreens) */
   @media (hover: none) {
     .cursor-circle, .cursor-point {
       display: none;

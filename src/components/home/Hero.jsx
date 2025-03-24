@@ -40,47 +40,9 @@ const Cursor = () => {
     }, 2000);
   }, []);
 
-//   useEffect(() => {
-//     const updateMousePosition = (e) => {
-//       setMousePos({ x: e.clientX, y: e.clientY });
-//     };
-
-//     window.addEventListener("mousemove", updateMousePosition);
-//     return () => window.removeEventListener("mousemove", updateMousePosition);
-//   }, []);
-
-//   useEffect(() => {
-//     const animateCursor = () => {
-//       setCirclePos((prev) => ({
-//         x: prev.x + (mousePos.x - prev.x) * 0.2,
-//         y: prev.y + (mousePos.y - prev.y) * 0.2,
-//       }));
-//       setPointPos((prev) => ({
-//         x: prev.x + (mousePos.x - prev.x) * 0.8,
-//         y: prev.y + (mousePos.y - prev.y) * 0.8,
-//       }));
-//       requestAnimationFrame(animateCursor);
-//     };
-//     animateCursor();
-//   }, [mousePos]);
-
   return (
     <>
-      {/* <div className="image-wrap" ref={imageWrap}></div>
-      <h1 className="big-name" ref={bigName}>RITIKA</h1>  */}
-
       <main>
-        {/* <div
-          className="cursor-circle"
-          ref={cursorCircle}
-          style={{ transform: `translate(${circlePos.x}px, ${circlePos.y}px)` }}
-        ></div>
-        <div
-          className="cursor-point"
-          ref={cursorPoint}
-          style={{ transform: `translate(${pointPos.x}px, ${pointPos.y}px)` }}
-        ></div> */}
-
         <div ref={imageWrap} className="image-wrap getHover"></div>
         <h1 ref={bigName} className="big-name getHover">
           RITIKA
