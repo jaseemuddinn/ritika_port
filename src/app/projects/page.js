@@ -56,15 +56,15 @@ export default function DynamicGridShowcase() {
             : projects.filter((project) => project.category === activeCategory)
 
     return (
-        <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div className=" min-h-screen py-8 px-4 sm:px-6 lg:px-8">
             <div className="flex justify-center gap-4 mb-12 flex-wrap">
                 {['All', 'City', 'Nature', 'People'].map((category) => (
                     <button
                         key={category}
                         onClick={() => setActiveCategory(category)}
                         className={`px-6 py-2 font-semibold transition-all ${activeCategory === category
-                                ? 'text-black border-b'
-                                : 'text-gray-700 hover:border-b hover:scale-1.05'
+                                ? 'border-b'
+                                : 'text-white hover:border-b hover:scale-1.05'
                             }`}
                     >
                         {category}

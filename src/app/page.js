@@ -7,7 +7,7 @@ export default function Home() {
     <>
     <Cursor />
     <DynamicGridShowcase />
-    <div className="bg-gray-50 text-center p-4 text-black text-sm">
+    <div className="text-center p-4 text-[#ff5900] text-sm">
       All Photos &copy; Ritika {new Date().getFullYear()}
     </div>
     </>

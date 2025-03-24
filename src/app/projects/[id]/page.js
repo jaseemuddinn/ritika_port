@@ -57,10 +57,10 @@ export default function ProjectDetailPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8">
       <div className="max-w-9xl mx-auto">
-        <h1 className="text-4xl text-black font-bold mb-6">{project.title}</h1>
-        <p className="text-lg text-gray-700 mb-12">{project.description}</p>
+        <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+        <p className="text-lg text-gray-200 mb-12">{project.description}</p>
         <div className="columns-1 sm:columns-2 lg:columns-2 gap-6">
           {project.images.map((image, index) => (
             <motion.div
@@ -79,13 +79,13 @@ export default function ProjectDetailPage({ params }) {
         </div>
         <button
           onClick={() => router.back()}
-          className="mt-8 px-6 py-2 text-black rounded-lg transition-colors"
+          className="mt-8 px-6 py-2 text-white rounded-lg transition-colors"
         >
           {/* <FontAwesomeIcon icon={faArrowLeft} className="mr-2" /> */}
           Back to Projects
         </button>
       </div>
-      <div className="bg-gray-50 text-center p-4 text-black text-sm">
+      <div className="text-center p-4 text-sm">
         All Photos &copy; Ritika {new Date().getFullYear()}
       </div>
     </div>
