@@ -25,7 +25,7 @@ const Cursor = () => {
       })
       .to(
         ".image-wrap",
-        { height: "250px", backgroundPosition: "50% 58%", y: "0" },
+        { height: "250px", backgroundPosition: "40% 40%", y: "0" },
         1.5
       )
       .from(
